@@ -23,8 +23,13 @@
             if((typeof myArr[i]) !='undefined'){
                 document.write('<p>' + myArr[i] + '</p>')
             }
-            
+        
         }
+        for(const key in newArr) {
+            document.write('<p>' + newArr[key] + '</p>')
+        } 
+        
+        
 
         console.log(typeof myArr);
         console.log(myArr['birou']);
