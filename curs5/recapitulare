@@ -1,0 +1,15 @@
+a
+a
+b
+d
+a
+false/true a nu este definit, b este definit
+nu sunt identice, deoarece dupa return nu mai executa in ex. 2
+b
+a
+a
+b
+nu
+eroare (b)
+0.5 
+//0.7999999999999
