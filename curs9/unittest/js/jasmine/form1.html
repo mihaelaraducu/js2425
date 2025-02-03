@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Spec Runner</title>
+
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-5.5.0/jasmine_favicon.png">
+    <link rel="stylesheet" href="lib/jasmine-5.5.0/jasmine.css">
+
+    <script src="lib/jasmine-5.5.0/jasmine.js"></script>
+    <script src="lib/jasmine-5.5.0/jasmine-html.js"></script>
+    <script src="lib/jasmine-5.5.0/boot0.js"></script>
+    <script src="lib/jasmine-5.5.0/boot1.js"></script>
+
+    <!-- Codul sursă pe care îl testez -->
+    <script src="./src/form1.js"></script>
+
+    <!-- Testele scrise pentru codul sursă -->
+    <script src="./spec/Form1.js"></script>
+</head>
+
+<body>
+    <h1>Testare Validare Email</h1>
+    <form id="emailForm">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <button type="button" onclick="testeazaEmail()">Verifică</button>
+        <p id="result"></p>
+    </form>
+
+    <script>
+        function testeazaEmail() {
+            const email = document.getElementById("email").value;
+            const rezultat = valideazaEmail(email);
+            document.getElementById("result").textContent = rezultat ? "Email valid" : "Email invalid";
+        }
+    </script>
+</body>
+
+</html>

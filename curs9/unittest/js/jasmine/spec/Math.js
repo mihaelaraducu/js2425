@@ -28,4 +28,3 @@ describe("math sum2", function () {
     });
 })
 
-// test validare adresa de email(in exemplu avem parola), Form.js si form.js - form.html
